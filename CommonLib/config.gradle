@@ -1,0 +1,65 @@
+
+def supportVersion = "24.0.0";
+def rxbindingVersion = "0.4.0"
+
+ext {
+
+    android = [
+                compileSdkVersion: 24,
+                buildToolsVersion: "24.0.0",
+                applicationId    : "com.snail.storereview",
+                minSdkVersion    : 14,
+                targetSdkVersion : 22,
+                versionCode      : 1,
+                versionName      : "1.0.0"
+              ]
+
+    dependencies = [
+                    "appcompat-v7"        : "com.android.support:appcompat-v7:${supportVersion}",
+                    "design"              : "com.android.support:design:${supportVersion}",
+                    "recyclerview-v7"     : "com.android.support:recyclerview-v7:${supportVersion}",
+                    "cardview-v7"         : "com.android.support:cardview-v7:${supportVersion}",
+                    "palette-v7"          : "com.android.support:palette-v7:${supportVersion}",
+                    "multidex"            : "com.android.support:multidex:1.0.1",
+                    "annotations"         : "com.android.support:support-annotations:${supportVersion}",
+
+                    "eventbus"            : "de.greenrobot:eventbus:2.4.0",
+                    "universalimageloader": "com.nostra13.universalimageloader:universal-image-loader:1.9.3",
+                    "numberprogressbar"   : "com.daimajia.numberprogressbar:library:1.2@aar",
+                    "umeng-analytics"     : "com.umeng.analytics:analytics:latest.integration",
+
+                    "retrofit2"           : "com.squareup.retrofit2:retrofit:2.0.2",
+                        "converter-gson"  : "com.squareup.retrofit2:converter-gson:2.0.2",
+                        "adapter-rxjava"  : "com.squareup.retrofit2:adapter-rxjava:2.0.2",
+
+                    "gson"                : "com.google.code.gson:gson:2.6.2",
+
+                    "rxjava"              : "io.reactivex:rxjava:1.1.1",
+                    "rxandroid"           : "io.reactivex:rxandroid:1.1.0",
+                    //Platform bindings:
+                    "rxbinding"           : "com.jakewharton.rxbinding:rxbinding:${rxbindingVersion}",
+                    "rxbinding-v4"        : "com.jakewharton.rxbinding:rxbinding-support-v4:${rxbindingVersion}",
+                    "rxbinding-v7"        : "com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxbindingVersion}",
+                    "rxbinding-design"    : "com.jakewharton.rxbinding:rxbinding-design:${rxbindingVersion}",
+                    "rxbinding-recyclerview": "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxbindingVersion}",
+
+
+
+                    "okhttp"              : "com.squareup.okhttp3:okhttp:3.2.0",
+                        "logging-interceptor" : 'com.squareup.okhttp3:logging-interceptor:3.2.0',
+                        "okhttp-urlconnection": "com.squareup.okhttp3:okhttp-urlconnection:3.2.0",
+
+                    "butterknife"         : "com.jakewharton:butterknife:7.0.1",
+                    "circleimageview"     : "de.hdodenhof:circleimageview:1.2.2",
+                    "glide"               : "com.github.bumptech.glide:glide:3.7.0",
+                    "paginate"            : "com.github.markomilos:paginate:0.5.0",
+                    "gif-drawable"        : "pl.droidsonroids.gif:android-gif-drawable:1.1.11",
+
+                    "debug-leakcanary"    : "com.squareup.leakcanary:leakcanary-android:1.3",
+                    "release-leakcanary"  : "com.squareup.leakcanary:leakcanary-android-no-op:1.3",
+
+                    "stetho"              : "com.facebook.stetho:stetho:1.3.1",
+                    "stetho-okhttp"       : "com.facebook.stetho:stetho-okhttp3:1.3.1",
+                    "stetho-js"           : "com.facebook.stetho:stetho-js-rhino:1.3.1"
+            ]
+}
